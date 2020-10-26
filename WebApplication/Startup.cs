@@ -49,6 +49,7 @@ namespace WebApplication
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute("second", "{controller=Second}");
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Company}/{action=Index}/{id?}");

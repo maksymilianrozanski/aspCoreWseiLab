@@ -29,17 +29,9 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
-WebApplication/wwwroot/lib/
-WebApplication/wwwroot/lib
 
 # Visual Studio 2015
 .vs/
 
-.idea/.idea.WebApplication/riderModule.iml
-.idea/.idea.WebApplication/.idea/contentModel.xml
-.idea/.idea.WebApplication/.idea/indexLayout.xml
-.idea/.idea.WebApplication/.idea/modules.xml
-.idea/.idea.WebApplication/.idea/projectSettingsUpdater.xml
-.idea/.idea.WebApplication/.idea/workspace.xml
-.idea/.idea.WebApplication/.idea/misc.xml
-.idea/.idea.WebApplication/.idea/vcs.xml
+.idea/.idea.WebApplication
+/package-lock.json
