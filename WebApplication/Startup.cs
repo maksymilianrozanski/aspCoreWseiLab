@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WebApplication.Database;
 
 namespace WebApplication
 {
@@ -24,6 +26,8 @@ namespace WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<ExchangesDbContext>(options => options
+                .UseSqlServer(Configuration.GetConnectionString("ExchangeThings")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
