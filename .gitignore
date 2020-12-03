@@ -35,4 +35,3 @@ msbuild.wrn
 
 .idea/.idea.WebApplication
 /package-lock.json
-/WebApplication/Migrations/
